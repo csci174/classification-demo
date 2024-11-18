@@ -14,19 +14,34 @@
 </head>
 
 <body>
-    <h1>Teachable Machine</h1>
-    <div>Teachable Machine Image Model</div>
-    <input type="file" id="model-file" accept=".json">
-    <input type="file" id="metadata-file" accept=".json">
-    <input type="file" id="weights-files" accept=".bin">
-    <button type="button" onclick="init()">Start</button>
-    <section class="container">
-        <div>
+    <h1>Realtime Categorization & Classification</h1>
+    <!-- <label for="model-file">Choose a model File</label>
+    <input type="file" id="model-file" accept=".json"> -->
+    <div class="layout">
+        <section class="col1">
+            <div>
+                <label for="model-file">Choose a model File</label>
+                <input type="file" id="model-file" accept=".json">
+            </div>
+            <div>
+                <label for="metadata-file">Choose a metadata file</label>
+                <input type="file" id="metadata-file" accept=".json">
+            </div>
+            <div>
+                <label for="weights-files">Choose metadata file(s)</label>
+                <input type="file" id="weights-files" accept=".bin">
+            </div>
+            <button type="button" onclick="init()">Start</button>
+        </section>
+        <section class="col2">
             <div id="webcam-container"></div>
             <div id="label-container"></div>
-        </div>
-        <div id="graph-container"></div>
-    </section>
+        </section>
+        <section class="col3">
+            <div id="graph-container"></div>
+        </section>
+    </div>
+
 
 </body>
 

@@ -2,11 +2,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    max-width: 960px;
+.layout {
     margin: auto;
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 400px 200px auto;
     column-gap: 20px;
 }
 
@@ -19,6 +18,33 @@ body {
 .bar {
     height: 30px;
 }
+
+
+/* #file-input {
+    display: none;
+} */
+
+/* Custom style for the label */
+input[type="file"] {
+    display: none;
+}
+
+label {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: #0056b3;
+}
+
+/* Optional styling for file name display */
+/* #file-name {
+    margin-top: 10px;
+    font-style: italic;
+} */
 
 .class_1 {
     background-color: red;
