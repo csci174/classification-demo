@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachable Machine</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Teachable Machine</h1>
+    <div>Teachable Machine Image Model</div>
+    <input type="file" id="model-file" accept=".json">
+    <input type="file" id="metadata-file" accept=".json">
+    <input type="file" id="weights-files" accept=".bin">
+    <button type="button" onclick="init()">Start</button>
+    <section class="container">
+        <div>
+            <div id="webcam-container"></div>
+            <div id="label-container"></div>
+        </div>
+        <div id="graph-container"></div>
+    </section>
+
+</body>
+
+</html>
